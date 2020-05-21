@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.min.scss"],"names":[],"mappings":"AAAA,KACC,eAAgB,CAChB,cAAe,CACf,WAAY,CACZ,UAAU","file":"style.min.css","sourcesContent":["body {\r\n\tbackground: #333;\r\n\ttranstion: 0.5s;\r\n\tborder: none;\r\n\tcolor:#fff;\r\n}"]}
