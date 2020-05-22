@@ -1,6 +1,5 @@
-body {
-	background: #333;
-	transtion: 0.5s;
-	border: none;
-	color:#fff;
-}
+@import 'normalize.scss';
+@import 'global.scss';
+@import 'header.scss';
+@import 'footer.scss';
+@import 'index.scss';

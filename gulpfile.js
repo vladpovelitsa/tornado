@@ -50,6 +50,22 @@ gulp.task('scripts', function(done){
     done()
 })
 
+gulp.task('styles', function(done){
+
+    gulp.src(['app/libs/slick-carousel/slick/slick.scss'])
+    .pipe(concat('libs.min.css'))
+    .pipe(sass({
+        errorLogToConsole: true,
+        outputStyle: 'compressed',
+    })
+    .on('error', console.error.bind(console))
+    .pipe(autoprefixer({
+        cascade: false,
+    }))
+    .pipe(gulp.dest('app/css/')));
+    done()
+})
+
 gulp.task('serve', function(done) {
 
     browserSync.init({
@@ -77,4 +93,4 @@ gulp.task('html', function(done){
     done()
 })
 
-gulp.task('default', gulp.series('sass','html', 'serve'));	
+gulp.task('default', gulp.series('sass','html', 'scripts', 'styles','serve'));	
