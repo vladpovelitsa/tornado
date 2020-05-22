@@ -23,7 +23,7 @@ var gulp = require('gulp'),
     rigger = require('gulp-rigger');
 
 gulp.task('sass', function(done) {
-    gulp.src("app/scss/**/*.scss")
+    gulp.src("app/sass/**/*.scss")
     	.pipe(sourcemaps.init())
         .pipe(rename({suffix: '.min'}))
         .pipe(sass({
@@ -72,9 +72,8 @@ gulp.task('serve', function(done) {
         server: "app/"
     });
 
-    gulp.watch("app/scss/*.scss", gulp.series('sass'));
+    gulp.watch("app/sass/*.scss", gulp.series('sass'));
     gulp.watch(["app/**/*.html","app/**/*.js","app/**/*.php"]).on('change', () => {
-      // pagebuilder()
       browserSync.reload();
 
       done();
