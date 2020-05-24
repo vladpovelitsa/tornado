@@ -1,13 +1,85 @@
-.toShop {
-	min-height: 100vh;
-	background: url('../img/goShopBg.jpg') center no-repeat,
-	            linear-gradient(180deg, #C4C1BA 0%, #D0CDC6 100%);
-	h2 {
-		font-weight: 300;
-		font-size: 48px;
-		text-align: center;
-		text-transform: uppercase;
-		padding-top: 332px;
-		margin-bottom: 230px;	
+// toShop
+	.toShop {
+		background-position: top center;
+		background-repeat:no-repeat;
+		background-size: auto 100%;
+		background-blend-mode: darken;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		padding-top: 250px;
+		padding-bottom: 100px;
+		h2 {
+			font-weight: 300;
+			font-size: 48px;
+			width: 100%;
+			text-align: center;
+			text-transform: uppercase;
+			margin-bottom: 230px;	
+		}
 	}
-}
+
+	@media screen and (max-width: 1550px) {
+		.toShop {
+			padding-top: 180px;
+			padding-bottom: 50px;
+			h2 {
+				margin-bottom: 150px;
+			}
+		}
+	}
+	@media screen and (max-width: 768px) {
+		.toShop {
+			padding-top: 50px;
+			padding-bottom: 50px;
+			background-size: 100%;
+			h2 {
+				margin-bottom: 50px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 520px) {
+		.toShop {
+			padding-top: 50px;
+			padding-bottom: 50px;
+			background-size: 100%;
+			h2 {
+				font-size: 24px;
+			}
+		}
+	}
+// toShop
+
+// popular
+	.popular {
+
+	}
+	.lines_heading {
+		font-size: 64px;
+		font-weight: 300;
+		margin: 30px auto;
+		text-transform: uppercase;
+		position: relative;
+		display: block;
+		max-width: 650px;
+		text-align: center;	
+		&:before,&:after {
+			content:'';
+			display: block;
+			width: 50%;
+			max-width:250px;
+			height: 2px;
+			background:#000;
+			position: absolute;
+			top:50%;
+			transform: translate(0,-50%);
+		}
+		&:before {
+			right: calc(100% + 50px);
+		}
+		&:after {
+			left: calc(100% + 50px);
+		}
+	}
+// popular
