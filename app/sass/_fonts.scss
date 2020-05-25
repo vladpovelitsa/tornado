@@ -3,7 +3,16 @@
 		font-family: 'GillSans';
 		src: url('../fonts/GillSans/GillSans.woff2') format('woff2'), /* Super Modern Browsers */
 			 url('../fonts/GillSans/GillSans.woff') format('woff'), /* Pretty Modern Browsers */
-			 url('../fonts/GillSans/GillSans.ttf')  format('truetype'), /* Safari, Android, iOS */
+			 url('../fonts/GillSans/GillSans.ttf')  format('truetype'); /* Safari, Android, iOS */
+		font-weight: 400;
+	}
+
+	@font-face {
+		font-family: 'GillSans';
+		src: url('../fonts/GillSans/GillSans-Light.woff2') format('woff2'), /* Super Modern Browsers */
+			 url('../fonts/GillSans/GillSans-Light.woff') format('woff'), /* Pretty Modern Browsers */
+			 url('../fonts/GillSans/GillSans-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
+		font-weight: 300;
 	}
 
 	@font-face {

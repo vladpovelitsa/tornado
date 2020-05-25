@@ -380,3 +380,119 @@
 		}
 	}
 // video_presentation
+
+// comfort
+	.comfort {
+		display: flex;
+		position: relative;
+	}
+	.love_yourself {
+		width: 45%;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		h2 {
+			font-family: 'Lato', sans-serif;
+			font-weight: 300;
+			text-align: center;
+			text-transform: uppercase;
+			color:#fff;
+			font-size: 70px;
+			margin-bottom: 320px;	
+		}
+	}
+	.comfort_content {
+		position: relative;
+		padding-top: 180px;
+		padding-bottom: 250px;
+		width: 55%;
+		text-transform: uppercase;
+		font-family: "GillSans", sans-serif;
+		text-align: center;
+		h2 {
+			font-family: "SaolDisplay", sans-serif;
+			font-size: 75px;
+			text-transform: uppercase;
+			font-weight: 400;
+			margin-bottom: 60px;
+			span {
+				text-transform: lowercase;
+			}
+		}
+		h3 {
+			font-size: 36px;
+			font-weight: 300;
+		}
+		ul {
+			list-style:none;
+			max-width: 550px;
+			margin: 80px auto;
+			font-size: 20px;
+			font-weight: 300;
+			li {
+				margin-bottom: 30px;
+			}
+		}
+	}
+	.circle_text {
+		display: block;
+		position: absolute;
+		left: 45%;
+		bottom: 180px;
+		width: 260px;
+		height: 260px;
+		border-radius: 50%;
+		z-index: 5;
+		transform: translate(0%,0);
+		text-transform: uppercase;
+		span {
+			bottom: 50%;
+			transform-origin: 0% 100%;
+			padding-bottom: 50%;
+			font-size: 22px;
+			font-weight: 400;
+			position: absolute;
+			
+			&:nth-of-type(1) {transform: rotate(190deg);}
+			&:nth-of-type(2) {transform: rotate(199deg);}
+			&:nth-of-type(3) {transform: rotate(208deg);}
+			&:nth-of-type(4) {transform: rotate(217deg);}
+			&:nth-of-type(5) {transform: rotate(226deg);}
+			&:nth-of-type(6) {transform: rotate(235deg);}
+			&:nth-of-type(7) {transform: rotate(244deg);}
+			&:nth-of-type(8) {transform: rotate(253deg);}
+			&:nth-of-type(9) {transform: rotate(262deg);}
+			&:nth-of-type(10) {transform: rotate(271deg);}
+			&:nth-of-type(11) {transform: rotate(280deg);}
+			&:nth-of-type(12) {transform: rotate(289deg);}
+			&:nth-of-type(13) {transform: rotate(298deg);}
+			&:nth-of-type(14) {transform: rotate(307deg);}
+			&:nth-of-type(15) {transform: rotate(316deg);}
+			&:nth-of-type(16) {transform: rotate(325deg);}
+			&:nth-of-type(17) {transform: rotate(334deg);}
+			&:nth-of-type(18) {transform: rotate(343deg);}
+
+			&:nth-of-type(19) {transform: rotate(10deg);}
+			&:nth-of-type(20) {transform: rotate(19deg);}
+			&:nth-of-type(21) {transform: rotate(28deg);}
+			&:nth-of-type(22) {transform: rotate(37deg);}
+			&:nth-of-type(23) {transform: rotate(46deg);}
+			&:nth-of-type(24) {transform: rotate(55deg);}
+			&:nth-of-type(25) {transform: rotate(64deg);}
+			&:nth-of-type(26) {transform: rotate(73deg);}
+			&:nth-of-type(27) {transform: rotate(82deg);}
+			&:nth-of-type(28) {transform: rotate(91deg);}
+			&:nth-of-type(29) {transform: rotate(100deg);}
+			&:nth-of-type(30) {transform: rotate(109deg);}
+			&:nth-of-type(31) {transform: rotate(118deg);}
+			&:nth-of-type(32) {transform: rotate(127deg);}
+			&:nth-of-type(33) {transform: rotate(136deg);}
+			&:nth-of-type(34) {transform: rotate(145deg);}
+			&:nth-of-type(35) {transform: rotate(154deg);}
+			&:nth-of-type(36) {transform: rotate(163deg);}
+			
+		}
+	}
+// comfort
