@@ -20,7 +20,10 @@ var gulp = require('gulp'),
 	sourcemaps = require('gulp-sourcemaps'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglifyjs'),
-    rigger = require('gulp-rigger');
+    rigger = require('gulp-rigger'),
+    webp = require('gulp-webp'),
+    imagemin = require('gulp-imagemin'),
+    jpeg2000 = require('gulp-jpeg-2000');
 
 gulp.task('sass', function(done) {
     gulp.src("app/sass/**/*.scss")
@@ -88,6 +91,30 @@ gulp.task('html', function(done){
     gulp.src('app/*.html')
     .pipe(rigger())
     .pipe(gulp.dest('build/'))
+
+    done()
+})
+
+gulp.task('convertJPEG2000', function(done) {
+  gulp.src('app/img/*.{jpg,jpeg,png}')
+    .pipe(jpeg2000())
+    .pipe(gulp.dest('app/img/'));
+
+    done()
+})
+
+gulp.task('convertWEBP', function(done) {
+  gulp.src('app/img/*.{jpg,jpeg,png}')
+    .pipe(webp())
+    .pipe(gulp.dest('app/img/'));
+
+    done()
+})
+
+gulp.task('imagemin', function(done) {
+  gulp.src('app/img/*.{jpg,jpeg,png}')
+    .pipe(imagemin())
+    .pipe(gulp.dest('app/img/'));
 
     done()
 })

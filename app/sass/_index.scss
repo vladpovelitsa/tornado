@@ -1,3 +1,121 @@
+// offer
+	.offer {
+		position: relative;	
+		height: 100vh;	
+		overflow: hidden;
+		.offer-content {
+			background: rgba(183,156,132, .35);
+			width: 100%;	
+			max-width: 1086px;
+			height: 100%;	
+			display: flex;	
+			z-index: 5;
+			margin: 0 auto;
+			flex-direction: column;
+			padding: 50px;
+			justify-content: space-around;
+			text-transform: uppercase;
+			h2 {
+				font-family: "SaolDisplay", sans-serif;
+				font-size: 65px;
+				span {
+					text-transform: lowercase;
+					color: rgba(183,156,132, 1);
+				}
+			}
+			.advantages_list {
+				text-align: center;
+				list-style: none;
+				color:#fff;
+				font-size: 24px;
+				li {
+					margin-bottom: 25px;
+				}
+			}
+			a {
+				text-align: center;
+				font-size: 36px;
+			}
+		}
+	}
+	.offer_imgs-grid {
+		display: grid;
+		grid-template-columns: repeat(7, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		grid-gap: 20px;
+		z-index: -1;
+		position: absolute;	
+		width: 2560px;	
+		height: 1440px;	
+		top:50%;
+		left:50%;
+		transform:translate(-50%,-50%);
+	}
+
+	@media screen and (max-width: 1500px) {
+		.offer {
+			.offer-content {
+				max-width: 812px;
+			}
+			.advantages_list {
+				li {
+					margin-bottom: 15px;
+				}
+			}
+		}
+		.offer_imgs-grid {
+			width: 1920px;
+			height: 1080px;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		.offer {
+			height: 540px; 
+			.offer-content {
+				padding: 50px 15px;
+				max-width: 420px;
+				h2 {
+					font-size: 32px;
+				}
+				.advantages_list li {
+					font-size: 18px;
+				}
+				a {
+					font-size: 24px;
+				}
+			}
+			
+		}
+		.offer_imgs-grid {
+			width: 1000px;
+			height: 560px;
+			grid-gap: 10px;
+		}
+	}
+	@media screen and (max-width: 400px) {
+		.offer {
+			height: 100vh;
+			max-height: 550px;
+			.offer-content {
+				h2 {
+					font-size: 28px;
+				}
+				.advantages_list li {
+					font-size: 16px;
+				}
+				a {
+					font-size: 20px;
+				}
+			}
+		}
+		.offer_imgs-grid {
+
+			grid-gap: 10px;
+		}
+	}
+// offer
+
 // toShop
 	.toShop {
 		background-position: top center;

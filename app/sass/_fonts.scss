@@ -1,8 +1,22 @@
 /*fonts*/
 	@font-face {
 		font-family: 'GillSans';
-		src: url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
-			 url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
-			 url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+		src: url('../fonts/GillSans/GillSans.woff2') format('woff2'), /* Super Modern Browsers */
+			 url('../fonts/GillSans/GillSans.woff') format('woff'), /* Pretty Modern Browsers */
+			 url('../fonts/GillSans/GillSans.ttf')  format('truetype'), /* Safari, Android, iOS */
+	}
+
+	@font-face {
+		font-family: 'BebasNeus';
+		src: url('../fonts/BebasNeus/BebasNeueRegular.woff2') format('woff2'), /* Super Modern Browsers */
+			 url('../fonts/BebasNeus/BebasNeueRegular.woff') format('woff'), /* Pretty Modern Browsers */
+			 url('../fonts/BebasNeus/BebasNeueRegular.ttf')  format('truetype'), /* Safari, Android, iOS */
+	}
+
+	@font-face {
+		font-family: 'SaolDisplay';
+		src: url('../fonts/SaolDisplay/SaolDisplay-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+			 url('../fonts/SaolDisplay/SaolDisplay-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+			 url('../fonts/SaolDisplay/SaolDisplay-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
 	}
 /*fonts*/
