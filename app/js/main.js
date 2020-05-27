@@ -3,18 +3,11 @@ $('.popular_slider').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   centerMode: true,
-  variableWidth: true,
   autoplay: true,
   autoplaySpeed: 2000,
   arrows:false,
   dots: false,
   responsive: [
-      {
-        breakpoint: 1300,
-        settings: {
-          slidesToShow: 2,
-        }
-      },
       {
         breakpoint: 768,
         settings: {
@@ -24,6 +17,16 @@ $('.popular_slider').slick({
         }
       },
     ]
+});
+
+$('.offer').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 2000,
+  arrows:false,
+  dots: true,
 });
 
 
