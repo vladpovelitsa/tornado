@@ -1,38 +1,11 @@
 /*fonts*/
 	@font-face {
-		font-family: 'GillSans';
-		src: url('../fonts/GillSans/GillSans.woff2') format('woff2'), /* Super Modern Browsers */
-			 url('../fonts/GillSans/GillSans.woff') format('woff'), /* Pretty Modern Browsers */
-			 url('../fonts/GillSans/GillSans.ttf')  format('truetype'); /* Safari, Android, iOS */
+		font-family: 'name';
+		src: url('../fonts/name/name.woff2') format('woff2'), /* Super Modern Browsers */
+			 url('../fonts/name/name.woff') format('woff'), /* Pretty Modern Browsers */
+			 url('../fonts/name/name.ttf')  format('truetype'); /* Safari, Android, iOS */
 		font-weight: 400;
+		
 	}
 
-	@font-face {
-		font-family: 'GillSans';
-		src: url('../fonts/GillSans/GillSans-Light.woff2') format('woff2'), /* Super Modern Browsers */
-			 url('../fonts/GillSans/GillSans-Light.woff') format('woff'), /* Pretty Modern Browsers */
-			 url('../fonts/GillSans/GillSans-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
-		font-weight: 300;
-	}
-	@font-face {
-		font-family: 'GillSansNova';
-		src: url('../fonts/GillSansNova/GillSansNova-Book.woff2') format('woff2'), /* Super Modern Browsers */
-			 url('../fonts/GillSansNova/GillSansNova-Book.woff') format('woff'), /* Pretty Modern Browsers */
-			 url('../fonts/GillSansNova/GillSansNova-Book.ttf')  format('truetype'); /* Safari, Android, iOS */
-		font-weight: 900;
-	}
-
-	@font-face {
-		font-family: 'BebasNeus';
-		src: url('../fonts/BebasNeus/BebasNeueRegular.woff2') format('woff2'), /* Super Modern Browsers */
-			 url('../fonts/BebasNeus/BebasNeueRegular.woff') format('woff'), /* Pretty Modern Browsers */
-			 url('../fonts/BebasNeus/BebasNeueRegular.ttf')  format('truetype'), /* Safari, Android, iOS */
-	}
-
-	@font-face {
-		font-family: 'SaolDisplay';
-		src: url('../fonts/SaolDisplay/SaolDisplay-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-			 url('../fonts/SaolDisplay/SaolDisplay-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-			 url('../fonts/SaolDisplay/SaolDisplay-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-	}
 /*fonts*/
