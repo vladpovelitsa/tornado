@@ -1,23 +1,23 @@
 /* 
-	packeges
-	
-	npm i gulp -g --save-dev
-	npm i gulp-sass --save-dev
-	npm i gulp-rename --save-dev
-	npm i gulp-autoprefixer --save-dev 
-	npm i gulp-sourcemaps --save-dev
-	npm i gulp-rigger --save-dev
+    packeges
+    
+    npm i gulp -g --save-dev
+    npm i gulp-sass --save-dev
+    npm i gulp-rename --save-dev
+    npm i gulp-autoprefixer --save-dev 
+    npm i gulp-sourcemaps --save-dev
+    npm i gulp-rigger --save-dev
 
 
 npm i --save-dev gulp-sass gulp-rename gulp-autoprefixer gulp-sourcemaps gulp-ripper browser-syn
 */ 
 
 var gulp = require('gulp'),
-	browserSync = require('browser-sync').create(),
-	sass = require('gulp-sass'),
-	rename = require('gulp-rename'),
-	autoprefixer = require('gulp-autoprefixer'),
-	sourcemaps = require('gulp-sourcemaps'),
+    browserSync = require('browser-sync').create(),
+    sass = require('gulp-sass'),
+    rename = require('gulp-rename'),
+    autoprefixer = require('gulp-autoprefixer'),
+    sourcemaps = require('gulp-sourcemaps'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglifyjs'),
     rigger = require('gulp-rigger'),
@@ -27,15 +27,15 @@ var gulp = require('gulp'),
 
 gulp.task('sass', function(done) {
     gulp.src("app/sass/**/*.scss")
-    	.pipe(sourcemaps.init())
+        .pipe(sourcemaps.init())
         .pipe(rename({suffix: '.min'}))
         .pipe(sass({
-        	errorLogToConsole: true,
-        	outputStyle: 'compressed',
+            errorLogToConsole: true,
+            outputStyle: 'compressed',
         }))
         .on('error', console.error.bind(console))
         .pipe(autoprefixer({
-        	cascade: false,
+            cascade: false,
         }))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest("app/css/"))
@@ -119,4 +119,4 @@ gulp.task('imagemin', function(done) {
     done()
 })
 
-gulp.task('default', gulp.series('sass','html', 'scripts', 'styles','serve'));	
+gulp.task('default', gulp.series('sass','html', 'scripts', 'styles','serve'));  
