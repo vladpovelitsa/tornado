@@ -46,7 +46,13 @@ gulp.task('sass', function(done) {
 
 gulp.task('scripts', function(done){
 
-    gulp.src(['app/libs/jquery/dist/jquery.min.js', 'app/libs/slick-carousel/slick/slick.min.js', 'app/libs/paw-select/paw-select.js'])
+    gulp.src([
+        'app/libs/jquery/dist/jquery.min.js', 
+        'app/libs/slick-carousel/slick/slick.min.js', 
+        'app/libs/paw-select/paw-select.js',
+        'app/libs/paw-range/paw-range.js',
+        'app/libs/lightbox/dist/js/lightbox.min.js',
+        ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('app/js/'))
@@ -55,7 +61,12 @@ gulp.task('scripts', function(done){
 
 gulp.task('styles', function(done){
 
-    gulp.src(['app/libs/slick-carousel/slick/slick.scss','app/libs/paw-select/paw-select.scss'])
+    gulp.src([
+        'app/libs/slick-carousel/slick/slick.scss',
+        'app/libs/paw-select/paw-select.scss',
+        'app/libs/paw-range/paw-range.scss',
+        'app/libs/lightbox/dist/css/lightbox.min.css',
+        ])
     .pipe(concat('libs.min.css'))
     .pipe(sass({
         errorLogToConsole: true,
@@ -112,13 +123,12 @@ gulp.task('convertWEBP', function(done) {
 })
 
 gulp.task('imagemin', function(done) {
-  gulp.src('app/img/*.{jpg,jpeg,png}')
+  gulp.src('app/img/*.{jpg,jpeg,png,svg}')
     .pipe(imagemin())
     .pipe(gulp.dest('build/img/'));
 
     done()
 })
-
 gulp.task('buildCss', function(done){
     gulp.src('app/css/**/*.css')
     .pipe(gulp.dest('build/css/'));
@@ -129,9 +139,14 @@ gulp.task('buildJs', function(done){
     .pipe(gulp.dest('build/js/'));
     done()
 })
+gulp.task('buildFonts', function(done){
+    gulp.src('app/fonts/**/*')
+    .pipe(gulp.dest('build/fonts/'));
+    done()
+})
 
 
-gulp.task('finish', gulp.series('imagemin', 'html','buildCss','buildJs'));
+gulp.task('finish', gulp.series('imagemin', 'html','buildCss','buildJs', 'buildFonts'));
 
 
 gulp.task('default', gulp.series('sass','html', 'scripts', 'styles','serve'));	
