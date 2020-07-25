@@ -123,7 +123,7 @@ gulp.task('convertWEBP', function(done) {
 })
 
 gulp.task('imagemin', function(done) {
-  gulp.src('app/img/*.{jpg,jpeg,png,svg}')
+  gulp.src('app/img/*.{jpg,jpeg,png,svg,gif}')
     .pipe(imagemin())
     .pipe(gulp.dest('build/img/'));
 
