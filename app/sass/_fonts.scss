@@ -1,11 +1,16 @@
 /*fonts*/
 	@font-face {
-		font-family: 'name';
-		src: url('../fonts/name/name.woff2') format('woff2'), /* Super Modern Browsers */
-			 url('../fonts/name/name.woff') format('woff'), /* Pretty Modern Browsers */
-			 url('../fonts/name/name.ttf')  format('truetype'); /* Safari, Android, iOS */
+		font-family: 'PfDinCindPro';
+		src: url('../fonts/pfdintextcondpro/PFDinTextCondPro-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+			 url('../fonts/pfdintextcondpro/PFDinTextCondPro-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+			 url('../fonts/pfdintextcondpro/PFDinTextCondPro-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
 		font-weight: 400;
-		
 	}
-
+	@font-face {
+		font-family: 'PfDinCindPro';
+		src: url('../fonts/pfdintextcondpro/PFDinTextCondPro-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+			 url('../fonts/pfdintextcondpro/PFDinTextCondPro-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+			 url('../fonts/pfdintextcondpro/PFDinTextCondPro-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+		font-weight: 700;
+	}
 /*fonts*/

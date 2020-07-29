@@ -1,6 +1,10 @@
+:root {
+	--yellow: #FFED00;
+}
 /*global*/
  	html {
  		scroll-behavior: smooth;
+ 		background: #000
  	}
 	* {
 		margin: 0;
@@ -10,9 +14,10 @@
 
 	}
 	body {
-		font-family: '', sans-serif;
-		background: #fff;
-		height: 150vh;
+		font-family: 'PfDinCindPro', sans-serif;
+		color: #fff;
+		transition: 1s;
+		// height: 150vh;
 	}
 	button {
 		cursor: pointer;
@@ -75,6 +80,9 @@
 	.center {
 		padding-left: calc(50vw - 185px);
 		padding-right: calc(50vw - 185px);
+	}
+	.wrapper {
+		height: unset !important;
 	}
 }
 

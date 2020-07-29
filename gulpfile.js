@@ -52,6 +52,7 @@ gulp.task('scripts', function(done){
         'app/libs/paw-select/paw-select.js',
         'app/libs/paw-range/paw-range.js',
         'app/libs/lightbox/dist/js/lightbox.min.js',
+        'app/libs/fullPage/fullpage.min.js',
         ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
@@ -66,6 +67,7 @@ gulp.task('styles', function(done){
         'app/libs/paw-select/paw-select.scss',
         'app/libs/paw-range/paw-range.scss',
         'app/libs/lightbox/dist/css/lightbox.min.css',
+        'app/libs/fullPage/fullpage.min.css',
         ])
     .pipe(concat('libs.min.css'))
     .pipe(sass({

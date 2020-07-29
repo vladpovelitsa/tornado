@@ -58,7 +58,11 @@
 	opacity: 0;
 	transition-duration: 1s;
 }
-
+.fadeRight {
+	transform: translate(-40px,0px);
+	opacity: 0;
+	transition-duration: 1s;
+}
 .rollLeft {
 	transform: scale(0,1);
 	overflow: visible;
@@ -80,12 +84,12 @@
 
 
 .section {
-	transition-duration: 1s;
-	opacity: 0;
-	&.animated {
+	// transition-duration: 1s;
+	// opacity: 0;
+	&.fp-completely {
 		opacity: 1;
 		.fadeUp,.fadeDown,
-		.fadeLeft {
+		.fadeLeft,.fadeRight {
 			transform: translate(0,0);
 			opacity: 1;
 		}
